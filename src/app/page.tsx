@@ -2,102 +2,135 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen justify-center items-center grid bg-white">
+      <main className="rounded-lg shadow-2xl flex flex-col">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="m-5 justify-start">
+
+          <h1 className="font-bold text-xl text-gray-800"> Appereance </h1>
+
+          <p className="text-gray-400">
+            Set or custimoze your preferences for the system
+          </p>
+
         </div>
+        
+        
+        <div className="border-t-2 border-gray-300 my-1 mx-4"></div>
+
+        <div className="m-5 justify-star flex items-center gap-4">
+          <div className="flex flex-col">
+                      
+            <h1 className="font-bold text-gray-800"> Language </h1>
+
+            <p className="text-gray-400">
+              Select the language of the platform 
+            </p>
+          </div>
+
+          
+          <div className="relative border-2 rounded-2xl px-4 py-2 flex items-center justify-between w-40 ml-20">
+            <p className="text-gray-600 justify-star">English</p>
+
+            <svg
+              className="h-4 w-4 text-gray-500 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="border-t-2 border-gray-300 my-1 mx-4"></div>
+        
+        <div className="m-5">
+          <h1 className="font-bold text-gray-800"> Interface theme </h1>
+          <p className="text-gray-400 mb-3">
+            Customize your application appearance
+          </p>
+
+          <div className="flex gap-10 items-center justify-center">
+            <div className=" px-4 py-3 flex flex-col items-center w-28">
+              <div className="border-2 rounded-xl w-30 h-20 bg-gradient-to-r from-purple-200 to-purple-400 "></div>
+              <p className="text-gray-600 mt-2">Auto</p>
+            </div>
+
+            <div className="rounded-xl px-4 py-3 flex flex-col items-center w-28">
+              <div className="border-1 rounded-xl w-30 h-20 bg-white border-indigo-900 shadow shadow-indigo-700"></div>
+              <p className="text-indigo-600 mt-2">Light</p>
+            </div>
+
+            <div className=" rounded-xl px-4 py-3 flex flex-col items-center w-28">
+              <div className="border-2 rounded-xl w-30 h-20 bg-gray-800"></div>
+              <p className="text-gray-600 mt-2">Dark</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t-2 border-gray-300 my-1 mx-4"></div>
+
+        <div className="m-5 flex items-center gap-2">
+
+          <div className="">
+            <h1 className="font-bold text-gray-800"> Accent color </h1>
+            <p className="text-gray-400 mb-3">
+              Pick your platform's main color
+            </p>
+          </div>
+
+          <div className="flex gap-3">
+            <div className="w-6 h-6 bg-red-400 rounded-full"></div>
+            <div className="w-6 h-6 bg-yellow-400 rounded-full"></div>
+            <div className="w-6 h-6 bg-green-400 rounded-full"></div>
+            <div className="w-6 h-6 bg-blue-400 rounded-full"></div>
+            <div className="w-6 h-6 bg-purple-400 rounded-full"></div>
+            <div className="w-6 h-6 bg-pink-400 rounded-full"></div>
+          </div>
+        </div>
+
+        <div className="border-t-2 border-gray-300 my-1 mx-4"></div>
+
+        <div className="m-5 flex flex-col gap-4">
+          <div className="flex justify-between items-center">
+            <p className="text-gray-800">Reduce motion</p>
+            <div className="w-10 h-5 bg-purple-500 rounded-full flex items-center">
+              <div className="w-4 h-4 bg-white rounded-full ml-5"></div>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <p className="text-gray-800">Auto play</p>
+            <div className="w-10 h-5 bg-purple-500 rounded-full flex items-center">
+              <div className="w-4 h-4 bg-white rounded-full ml-5"></div>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <p className="text-gray-800">High quality photo</p>
+            <div className="w-10 h-5 bg-gray-300 rounded-full flex items-center">
+              <div className="w-4 h-4 bg-white rounded-full ml-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t-2 border-gray-300 my-1 mx-4"></div>
+
+        <div className="m-5 flex justify-between">
+          <button className="text-gray-500">Reset to default</button>
+          <div className="flex gap-3">
+            <button className="px-4 py-2 rounded-lg border text-gray-600">
+              Cancel
+            </button>
+            <button className="px-4 py-2 rounded-lg bg-purple-600 text-white">
+              Save Preferences
+            </button>
+          </div>
+        </div>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
